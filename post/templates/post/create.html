@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+
+{% block content%}
+<div class="col-lg-8">
+  {% include 'component/profile.html' %}
+  <div class="panel">
+    <div class="panel-heading">
+      <h3 class="panel-title">Activity Feed</h3>
+    </div>
+    <div class="panel-content panel-activity">
+
+      {% include 'component/feed_form.html' %}
+      
+      {% include 'component/feed_list.html' %}
+    </div>
+  </div>
+</div>
+{% endblock %}

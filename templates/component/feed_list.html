@@ -1,0 +1,22 @@
+<ul class="panel-activity__list">
+  {% for post in posts %}
+  <li>
+    <i class="activity__list__icon fa fa-question-circle-o"></i>
+    <div class="activity__list__header">
+      <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+      <a href="#">John Doe</a> Posted the question:
+      <a href="#">How can I change my annual reports for the better effect?</a>
+    </div>
+    <div class="activity__list__body entry-content">
+      <p>
+        {{ post.text }}
+      </p>
+    </div>
+    <div class="activity__list__footer">
+      <a href="#"> <i class="fa fa-thumbs-up"></i>123</a>
+      <a href="#"> <i class="fa fa-comments"></i>23</a>
+      <span> <i class="fa fa-clock"></i>{{ post.created_at }}</span>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

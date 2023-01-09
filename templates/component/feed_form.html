@@ -1,0 +1,18 @@
+<form action="{% url 'post:create' %}" method="post" enctype="multipart/form-data" class="panel-activity__status">
+  {% csrf_token %} 
+  {{ form.text }}
+  <div class="actions">
+    <div class="btn-group">
+      <button
+        type="button"
+        class="btn-link"
+        title=""
+        data-toggle="tooltip"
+        data-original-title="Post an Image"
+      >
+        <i class="fa fa-image"></i>
+      </button>
+    </div>
+    <button type="submit" class="btn btn-sm btn-rounded btn-info">Post</button>
+  </div>
+</form>
